@@ -2,19 +2,21 @@
 <html lang="ja">
  <head>
   <meta charset="utf-8">
-  <title>1146gnd</title>
+  <title>1146Gnd</title>
  </head>
  <body>
-  <h1>1146gnd Lang/Chart</h1>
-  (Iijiro Ground Language/Chart)<br/>
+  <h1>1146Gnd Lang/Chart/Asm</h1>
+  (Iijiro Ground Language/Chart/Assembler)<br/>
+
   <h3>「パワポが動け!」プロジェクト</h3>
   <ul>
     <li>パワーポッターの生成物をソースコードに落とせない(涙)</li>
     <li>矛盾の無い仕様書</li>
     <li>動作チェックができる</li>
     <li>何ならそのままリリース可能</li>
-    <li>→1146gnd Lang/Chart</li>
+    <li>→1146Gnd Lang/Chart/Asm</li>
   </ul>
+
   <h3>ソースコードのコメントに図を!</h3>
   <ul>
     <li>図のレイヤーを設ける？</li>
@@ -23,9 +25,13 @@
     <li>グラフ用リストの描画</li>
     <li>画像のコピペ、編集、簡易パワポ</li>
     <li>いや、図にソースコードを書き込んだほうが良くね？</li>
-    <li>→1146gnd Lang/Chart</li>
+    <li>→1146Gnd Lang/Chart/Asm</li>
   </ul>
-  <h3>1146gnd Lang</h3>
+
+  <h3>1146Gnd 概念図</h3>
+  <img src="./1146Gnd-gainen-20241120.png" alt="1146Gnd 概念図">
+
+  <h3>1146Gnd Lang</h3>
   <ul>
     <li>昔は16bitアドレス空間(64KiB:0x0000-0xffff)にラベルだった。</li>
     <li>これを、最新？現代？の個人向け計算機の能力をぶん回せることを前提に、拡張する。</li>
@@ -39,12 +45,18 @@
     <li>ソースコードのNodeは、処理後、次にどのNodeを実行するか決める。</li>
     <li>→プログラムカウンター？実行中のNodeのアドレス？の自動インクリメントはなし。</li>
     <li>ソースコードのNodeのソースコード？マクロ？は上から順番に処理される。</li>
+    <li></li>
+    <li>Node?にアクセス権限。グループ/個別...とか。「隠蔽」みたいなことをやれるように。</li>
+    <li></li>
+    <li>(まずは、json format???)</li>
+    <li></li>
     <li>...</li>
   </ul>
-  <h3>1146gnd Chart GUI</h3>
+  <h3>1146Gnd Chart (GUI Programming)</h3>
   <ul>
     <li>Nodeとそれを結ぶ線(Link)</li>
     <li>SafariとiPad mini(第5世代)とApple Pencil(第1世代)</li>
+    <li>SafariとiPad mini(A17pro:第7世代)とApple Pencil Pro</li>
     <li>PythonとDjangoとVue.jsでAjax。SVG描画</li>
     <li>Webアプリとしてデブロイ？</li>
     <li>(技術的には可能です...知らんけど^^;;;)</li>
@@ -59,13 +71,14 @@
     <li>NodeにテストマクロNode</li>
     <li>ダミー(API/HardWear/...)モジュールNode</li>
     <li></li>
-    <li>1146gnd Lang Chart GUI、1146gnd Lang ソースコード(無理かな...)、清書、説明書込み、を、同期する何か...知らんけど^^;;;</li>
+    <li>1146Gnd Lang Chart GUI、1146Gnd Lang ソースコード(無理かな...)、清書、説明書込み、を、同期する何か...知らんけど^^;;;</li>
     <li>グラフ、図(SVG出力?)、も同期、というか描画。</li>
     <li>グラフ、図、は、アニメーション？スタート/ストップボタン？</li>
     <li>清書: プレゼン用。GUIアプリ(Webアプリ)。などなど...。</li>
     <li>無限undo/redo。操作ツリー。</li>
     <li>gitのカスタマイズ的何か...知らんけど^^;;;</li>
-    <li>ソースコードは、拡張機能を作らず、Python(Rust!!??)の拡張機能で見やすいようにする。</li>
+    <li>ソースコードは、VSCode拡張機能を作らず、Python(Rust!!??)の拡張機能で見やすいようにする。</li>
+    <li>(まずは、json format???)</li>
     <li></li>
     <li>プロパティを指定したり、追加したり、して、新たなNodeが作れる。</li>
     <li>プロパティにより動的にNodeを有効/無効にすることもできる。</li>
@@ -73,8 +86,34 @@
     <li></li>
     <li>...</li>
   </ul>
+  <h3>1146Gnd Asm</h3>
+  <ul>
+    <li>Address:Type-Data</li>
+    <li></li>
+    <li>Header</li>
+    <li>List(Typeにより、Headerも混在可能にする)</li>
+    <li></li>
+    <li>(1146Gnd Lang)</li>
+    <li></li>
+    <li>(1146Gnd Chart)</li>
+    <li>Chartの情報。座標。図形情報、テキスト情報、Link情報</li>
+    <li></li>
+    <li>...</li>
+  </ul>
+
+  <h3>番外編 1146Chaos 概念図</h3>
+  <img src="./1146Chaos-gainen-20241120.png" alt="1146Chaos 概念図">
+  <ul>
+    <li>カオス(混沌)...てか、秩序(System?)？？？？</li>
+    <li></li>
+    <img src="./IMG_2978.png" alt="やさしい物理:一覧表">
+    <a href="https://www2.kek.jp/kids/class/particle/class01-07.html">キッズサイエンス</a>
+    <li>...</li>
+  </ul>
+
   <hr/>
-  20241016-0710 更新ってか初稿 by 飯城1146三郎(1146cho326)(IIJRO cho Saburo)
+  20241121-0700 更新 1146gnd ---&gt; 1146Gnd, add 1146Gnd Asm, ect</br>
+  20241016-0710 更新ってか初稿 by コピペ二スト:飯城1146三郎(1146cho326)(IIJRO cho Saburo)</br>
  </body>
 </html>
 
