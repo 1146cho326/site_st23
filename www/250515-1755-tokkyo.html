@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>画面解析型 自動操作機器 — 特許防衛のための公開技術情報</title>
+</head>
+<body>
+  <h1>画面解析型 自動操作機器 — 特許防衛のための公開技術情報</h1>
+  <p>Screen-driven HID Emulator Device — Public Disclosure for Patent Defense</p>
+  <h2>公開技術情報 / Public Disclosure</h2>
+  <p>本ドキュメントは、以下の構成・動作原理をもつ自動操作機器（以下「本機器」）に関して、<br>
+  特許権の取得を目的とせず、第三者による特許取得を防ぐため、<br>
+  日本時間2025年5月15日に公知例として一般公開するものです。</p>
+  <p>This document publicly discloses a device ("the Device")<br>
+  for the purpose of preventing third-party patent claims.<br>
+  No patent rights are intended to be filed for this invention.<br>
+  This is a public disclosure made on May 15, 2025 (JTS).</p>
+
+  <h3>概要 / Overview</h3>
+  <ul>
+    <li>本機器は、Windows/macOS/Linux/など(以下「汎用コンピュータ」)のHDMIなど画面出力端子とUSB等の操作用インタフェース端子に接続される。</li>
+    <li>The Device is connected to a general-purpose computer (Windows/macOS/Linux/etc) via a display output such as HDMI and a control interface such as USB.</li>
+
+    <li>汎用コンピュータの画像出力端子からの入力を介して、画面の映像をリアルタイムに取得する。</li>
+    <li>It captures the screen of the general-purpose computer in real time via the display output.</li>
+
+    <li>取得した画面画像を処理・解析し、GUI要素（ボタン、テキストなど）を特定する。</li>
+    <li>The captured screen image is processed and analyzed to identify GUI elements (such as buttons and text).</li>
+
+    <li>GUI要素の認識には、テンプレートマッチング、OCR、または生成系AIによる画像解析（例:ChatGPT Vision）を利用できる。</li>
+    <li>GUI recognition may be performed using template matching, OCR, or generative AI-based image analysis (e.g., ChatGPT Vision).</li>
+
+    <li>解析結果に応じて、USB経由などで、マウス・キーボードなどの操作用信号を生成・送信する。</li>
+    <li>Based on the analysis, the Device generates and transmits mouse, keyboard and etc signals.</li>
+
+    <li>これにより、人間の操作を模倣した自動入力を実現する。</li>
+    <li>This enables automatic input that mimics human operations.</li>
+  </ul>
+
+  <h3>特徴 / Technical Features</h3>
+  <ul>
+    <li>本機器は、OSに依存せず、スクリーン画像のみを根拠に判断・動作を行う。</li>
+    <li>The Device operates independently of the OS and makes decisions solely based on the screen image.</li>
+
+    <li>汎用コンピュータからの画面画像に基づき、自律的に入力動作（マウス移動・クリック・キー入力など）を決定する。</li>
+    <li>It autonomously determines input actions (mouse movement, clicking, keystrokes and etc) based on the screen image from the general-purpose computer.</li>
+  </ul>
+
+  <h3>想定用途 / Use Cases</h3>
+  <ul>
+    <li>アプリケーションの操作自動化（RPAのハードウェア版）</li>
+    <li>Application automation (hardware-based RPA)</li>
+
+    <li>GUIテストの自動化</li>
+    <li>Automated GUI testing</li>
+
+    <li>視覚的UIインタフェースの自動応答</li>
+    <li>Automatic response to visual UI interfaces</li>
+
+    <li>OS非依存のUI操作デバイス開発</li>
+    <li>Development of OS-independent UI control devices</li>
+  </ul>
+
+  <h3>公開日時 / Publication Date</h3>
+  <p>本文書は 日本時間2025年5月15日に公開されたものである。</p>
+  <p>This document was made publicly available on May 15, 2025 (JST).</p>
+</body>
+</html>
